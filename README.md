@@ -1,11 +1,11 @@
 # terraform_lambda
 lambda function deployment with terraform 
 
-**Step 1: Create an IAM User and configure with AWSCLI
+Step 1: Create an IAM User and configure with AWSCLI
 
 Step 2: Create Lambda function using python script 
 
-Step 3: Create IAM Policy**
+Step 3: Create IAM Policy
 
 Automatically create a policy file using the AWS policy generator:
 
@@ -30,8 +30,8 @@ In the \iam folder, Add another file named lambda_assume_role.json
     }
   ]
 }
-**
-Step 4: Create Terraform Resources**
+
+Step 4: Create Terraform Resources
 
 To enable TerraForm to deploy Lambda functions, you need to create three .tf files in the \lambda-test\ project folder:
 
