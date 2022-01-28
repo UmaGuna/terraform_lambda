@@ -18,7 +18,7 @@ resource "aws_lambda_function" "lambda-tf" {
   role          = aws_iam_role.lambda_role.arn
   handler       = "welcome.hello"
 
- # source_code_hash = filebase64sha256("${locals.zip_location}")
+  source_code_hash = filebase64sha256("${local.zip_location}")
 
   runtime = "python3.7"
 
